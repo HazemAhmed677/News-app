@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
     return const Column(
       children: [
         SizedBox(
-          height: 40,
+          height: 35,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +31,7 @@ class CustomAppBar extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 20,
+          height: 18,
         ),
       ],
     );

@@ -8,12 +8,64 @@ class CategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          NewsListViewBuilder(
-            category: category,
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 35,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 40,
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(30)),
+                      boxShadow: [
+                        BoxShadow(
+                          spreadRadius: 0.08,
+                          blurRadius: 20,
+                          color: Colors.grey,
+                          offset: Offset(
+                            3,
+                            4,
+                          ),
+                        )
+                      ]),
+                  child: Card(
+                    elevation: 8,
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Text(
+                          category,
+                          style: const TextStyle(
+                            color: Colors.orange,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 12,
+            ),
+            Expanded(
+              child: CustomScrollView(
+                slivers: [
+                  NewsListViewBuilder(
+                    category: category,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
