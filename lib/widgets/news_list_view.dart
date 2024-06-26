@@ -21,8 +21,7 @@ class NewsListView extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                        NewsView(articleModel: articles[index])));
+                    builder: (context) => NewsView(url: articles[index].url)));
               },
               child: NewsTile(
                 articleModel: articles[index],
