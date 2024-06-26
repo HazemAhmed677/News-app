@@ -36,9 +36,13 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
               child: Text('oops  was an error, try later'),
             );
           } else {
-            return const SliverToBoxAdapter(
-              child: Center(
-                child: CircularProgressIndicator(),
+            return SliverToBoxAdapter(
+              child: Padding(
+                padding: EdgeInsets.only(
+                    top: 0.5 * MediaQuery.of(context).size.height - 89),
+                child: const Center(
+                  child: CircularProgressIndicator(),
+                ),
               ),
             );
           }

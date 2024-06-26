@@ -52,8 +52,8 @@ class CategoryView extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 12,
+            const SizedBox(
+              height: 14,
             ),
             Expanded(
               child: CustomScrollView(

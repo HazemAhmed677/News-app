@@ -4,7 +4,6 @@ import 'package:news_app_ui_setup/views/category_view.dart';
 
 class CategoryCard extends StatelessWidget {
   const CategoryCard({super.key, required this.category});
-
   final CategoryModel category;
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,9 @@ class CategoryCard extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             image: DecorationImage(
-                image: AssetImage(category.image), fit: BoxFit.fill),
+              image: AssetImage(category.image),
+              fit: BoxFit.cover,
+            ),
           ),
           child: Center(
             child: Text(

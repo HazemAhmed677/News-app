@@ -20,8 +20,9 @@ class NewsListView extends StatelessWidget {
             child: InkWell(
               borderRadius: BorderRadius.circular(10),
               onTap: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const NewsView()));
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>
+                        NewsView(articleModel: articles[index])));
               },
               child: NewsTile(
                 articleModel: articles[index],
