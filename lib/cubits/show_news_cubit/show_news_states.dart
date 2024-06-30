@@ -6,6 +6,4 @@ class LoadingNewsState extends NewsCubitStates {}
 
 class SuccessNewsState extends NewsCubitStates {}
 
-class FailureNewsState extends NewsCubitStates {
-  FailureNewsState(String errorMsg);
-}
+class FailureNewsState extends NewsCubitStates {}

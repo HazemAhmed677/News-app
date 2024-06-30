@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
     return const Column(
       children: [
         SizedBox(
-          height: 35,
+          height: 14,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

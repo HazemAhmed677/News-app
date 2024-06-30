@@ -4,17 +4,17 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 class NewsCubit extends Cubit<NewsCubitStates> {
   NewsCubit() : super(InitialNewsState());
-  WebViewController? getWeb(String url) {
+  var controller;
+  getWeb(String url) {
     emit(LoadingNewsState());
     try {
-      var controller = WebViewController()
+      controller = WebViewController()
         ..setJavaScriptMode(JavaScriptMode.unrestricted)
         ..loadRequest(Uri.parse(url));
       emit(SuccessNewsState());
       return controller;
     } catch (e) {
-      emit(FailureNewsState(e.toString()));
+      emit(FailureNewsState());
     }
-    return null;
   }
 }

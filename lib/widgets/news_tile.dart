@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:news_app_ui_setup/cubits/show_news_cubit/show_news_cubit.dart';
 import 'package:news_app_ui_setup/models/article_model.dart';
 
 // cached network image
