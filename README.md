@@ -1,16 +1,19 @@
-# news_app_ui_setup
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h1>News App</h1>
+<hr><p>A news aggregator application providing tailored news content based on user interests.</p><h2>Technologies Used</h2>
+<hr><ul>
+<li>Flutter</li>
+</ul><ul>
+<li>Restful API</li>
+</ul><ul>
+<li>Backend services</li>
+</ul><h2>Features</h2>
+<hr><ul>
+<li>Categorized news feed (science, entertainment, sports, health, general)</li>
+</ul><ul>
+<li>Display of news articles with headlines, summaries, and images</li>
+</ul><ul>
+<li>Ability to open news articles in the original website</li>
+</ul><ul>
+<li>Clean and intuitive user interface</li>
+</ul><h2>Project Status</h2>
+<hr><p>Completed</p>
